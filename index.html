@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <title>Expense Tracker</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="container">
     <h2><i class="fa-solid fa-wallet"></i> Expense Tracker</h2>
 
@@ -26,9 +29,16 @@
       </div>
     </div>
 
+    <!-- Monthly Income -->
+    <form id="form-income">
+      <input type="number" id="monthlyIncome" placeholder="Enter your monthly income..." required />
+      <button type="submit"><i class="fa-solid fa-coins"></i> Save Monthly Income</button>
+    </form>
+
+    <!-- Add Transaction -->
     <form id="form">
-      <input type="text" id="text" placeholder="Enter expenses item..." required />
-      <input type="number" id="amount" placeholder="Enter amount ( + / - )" required />
+      <input type="text" id="text" placeholder="Enter expense or income item..." required />
+      <input type="number" id="amount" placeholder="Enter amount (Just number)" required />
       <button type="submit"><i class="fa-solid fa-plus"></i> Add Transaction</button>
     </form>
 
